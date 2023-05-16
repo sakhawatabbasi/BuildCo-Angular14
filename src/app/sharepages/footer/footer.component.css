@@ -1,0 +1,123 @@
+.bgfooter{
+ background-color: rgb(95, 91, 91); 
+}
+.cont-1{
+display: flex;
+}
+
+.first-col{
+flex-direction: column;
+margin: 80px 0 0 50px;
+line-height: 3;
+color: white;
+}
+
+.first-col i{
+  margin: 0 10px 0 10px;
+}
+.sec1-row{
+  display: flex;
+}
+.sec-col{
+
+margin: 50px 0 0 500px;
+}
+.text1-end{
+  margin:5px 0 0 0;
+text-align: center;
+color: rgb(135, 132, 132);
+}
+
+    /*  */
+      
+  ul {
+    width:30vmin;
+    height:30vmin;
+    position:relative;
+    margin: 0 450px;
+  }
+  
+  li { 
+   
+    --h: calc(100% / 3);
+    --w: calc(1.15470053838 * var(--h));
+    --a: calc(0.28867513459 * var(--h));
+    --d: calc(0.57735026919 * var(--h));
+    height:var(--h);
+    width:var(--w);
+    position:absolute;
+  }
+  
+  .img1 {
+    /* background-image: url(../../../assets/bgimg.jpg); */
+    display:block;
+    width:80px;
+    height: 50px;
+    
+    object-fit:cover;
+    
+    --aw:24.99999999999%;
+    clip-path:polygon(
+      var(--aw) 0,
+      0 50%,
+      var(--aw) 100%,
+      calc(100% - var(--aw)) 100%,
+      100% 50%,
+      calc(100% - var(--aw)) 0
+    );
+  }
+  
+  li:nth-of-type(1) {
+    left:calc(50% - var(--a) - var(--d) * 0.5);
+    top:0;
+  }
+  li:nth-of-type(2) {
+    left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+    top:calc(var(--h) * 0.5);
+  }
+  li:nth-of-type(3) {
+    left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+    top:calc(var(--h) * 1.5);
+  }
+  li:nth-of-type(4) {
+    left:calc(50% - var(--a) - var(--d) * 0.5);
+    top:calc(var(--h) * 2);
+  }
+  li:nth-of-type(5) {
+    left:calc(50% + var(--d) * 0.5);
+    top:calc(var(--h) * 0.5);
+  }
+  li:nth-of-type(6) {
+    left:calc(50% + var(--d) * 0.5);
+    top:calc(var(--h) * 1.5);
+  }
+  /* 
+  style 
+  */
+  
+  ul {
+    filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
+  }
+  
+  li:hover {
+    filter:drop-shadow(0 0 10px powderblue);
+    z-index:10;
+  }
+  
+  /*
+  anim
+  */
+  
+  ul {
+    animation:r 5s forwards;
+  } @keyframes r {
+    from {transform:rotate(180deg)}
+    to {transform:rotate(0)}
+  }
+  
+  li {
+    animation:ir 5s forwards;
+  } @keyframes ir {
+    from {transform:rotate(-360deg)}
+    to {transform:rotate(0)}
+  }

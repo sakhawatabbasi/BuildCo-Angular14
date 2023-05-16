@@ -1,0 +1,9 @@
+.hovr{
+    transition: 1.0s;
+}
+ .hovr:hover {
+    transform: translateY(-50px);
+    transition: 1.0s;
+    background-color: rgb(252, 188, 125);
+    border-radius: 10px;
+  }

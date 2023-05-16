@@ -1,0 +1,23 @@
+.container img{
+    transition: 1s;
+}
+  .container img:hover {
+    transform:perspective(800px)       rotateY(180deg);
+    opacity:1;
+    transition: 2.5s;
+
+  }
+  .hovr{
+    transition: 1.0s;
+}
+ .hovr:hover {
+    transform: translateY(-50px);
+    transition: 1.0s;
+    background-color: rgb(252, 188, 125);
+    border-radius: 10px;
+
+  }
+  .img-area1 img {
+		width: 100%;
+    height: 35vh;
+	}

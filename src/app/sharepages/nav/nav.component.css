@@ -1,0 +1,16 @@
+.bg-navbart{
+background-color: #5F5B5B;
+}
+ul li a {
+    color: white;
+    font-weight: bold;
+
+}
+
+ul li a:hover{
+    background-color: #FFC107;
+    border-radius: 8px;
+    color:black;
+    
+ 
+}
