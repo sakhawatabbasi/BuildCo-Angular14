@@ -119,6 +119,10 @@ body {
 	.navbar-nav {
 		text-align: center;
 	}
+	
+	.navbar-toggler{
+		margin: 0 45px 0 0px ;
+	}
 	.carousel-caption {
 		bottom: 125px;
 	}

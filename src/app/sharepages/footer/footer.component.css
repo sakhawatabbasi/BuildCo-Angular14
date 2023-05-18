@@ -121,3 +121,42 @@ color: rgb(135, 132, 132);
     from {transform:rotate(-360deg)}
     to {transform:rotate(0)}
   }
+
+
+  @media only screen and (max-width: 767px) {
+.cont-1{
+display: flex;
+flex-direction: column;
+}
+
+.first-col{
+flex-direction: column;
+line-height: 1;
+
+}
+.first-col h5{
+  font-size: 20px;
+}
+
+.ro1{
+  margin: 0px 45px 0px 0px;
+}
+.first-col i{
+  margin: 0 4px 0 4px;
+}
+
+.sec-col{
+flex-direction: column;
+margin-left: 100px;
+margin-bottom: 10px;
+}
+.text1-end{
+  margin:23px 0 0 0;
+}
+
+
+
+  }
+
+
+
